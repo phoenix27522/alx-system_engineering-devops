@@ -91,3 +91,13 @@ Executing the `set` command will output a comprehensive list of all local variab
 BEST="School"
 ```
 This command assigns the value "School" to the BEST variable.
+
+### Q8)To create a new global variable named `BEST` with the value `School` in a shell script or interactive shell session, you can use the following command:
+
+```bash
+export BEST="School"
+```
+
+The `export` command is used to create a global variable that is accessible to child processes and other shell sessions. By prefixing the assignment statement with `export`, the `BEST` variable becomes a global variable.
+
+
