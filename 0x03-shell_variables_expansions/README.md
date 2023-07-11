@@ -123,3 +123,14 @@ The `$((...))` syntax is used for arithmetic expansion in shell scripting. Withi
 Please ensure that the variables `POWER` and `DIVIDE` have been properly defined and contain valid numeric values before using this command. If any of the variables are not set or do not contain numeric values, the arithmetic operation may produce unexpected results or errors.
 
 
+# Q11) The correct syntax to raise a value to a power in shell scripting is `**`. Here's the correct command to display the result of raising the value of the `BREATH` environment variable to the power of the `LOVE` environment variable, followed by a new line:
+
+```bash
+echo $((BREATH ** LOVE))
+```
+
+The `$((...))` syntax is used for arithmetic expansion in shell scripting. Within the double parentheses, you can perform mathematical calculations, including exponentiation using the `**` operator. In this case, the expression `BREATH ** LOVE` will be evaluated, and the result will be printed using the `echo` command.
+
+Please ensure that the variables `BREATH` and `LOVE` have been properly defined and contain valid numeric values before using this command. If any of the variables are not set or do not contain numeric values, the arithmetic operation may produce unexpected results or errors.
+
+
