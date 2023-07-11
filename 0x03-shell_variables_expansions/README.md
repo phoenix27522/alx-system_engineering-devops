@@ -142,3 +142,4 @@ echo "$((2#$BINARY))"
 In this command, the `2#` prefix before the `$BINARY` variable tells the shell to interpret the value of `$BINARY` as a number in base 2 (binary). The arithmetic expansion `"$((...))"` then performs the conversion from base 2 to base 10.
 
 Make sure to replace `"$BINARY"` with the appropriate variable or value that holds the binary number you want to convert. When you run this command, it will output the decimal (base 10) equivalent of the binary number.
+
