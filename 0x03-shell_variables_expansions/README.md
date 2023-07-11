@@ -56,4 +56,25 @@ When you execute the command, it will display the count of directories in the `P
 
 Note: The `tr` command is used to perform character translation or deletion. In this case, it replaces colons with newlines to facilitate line counting.
 
+##### Q5)To list environment variables in Unix-like systems (e.g., Linux, macOS), you can use the `env` command or `printenv` command. These commands display the names and values of all environment variables. Here's how you can use them:
+
+Using the `env` command:
+```bash
+env
+```
+
+Using the `printenv` command:
+```bash
+printenv
+```
+
+Both commands will output a list of environment variables, including variables like `PATH`, `HOME`, `USER`, and others.
+
+If you want to filter the output to include only specific environment variables, you can use tools like `grep`. For example, to display only the `PATH` variable, you can use:
+```bash
+env | grep PATH
+```
+
+The above command will show the value of the `PATH` variable.
+
 
