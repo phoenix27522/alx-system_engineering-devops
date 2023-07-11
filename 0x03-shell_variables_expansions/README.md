@@ -112,3 +112,14 @@ Executing this command will print the result of the addition, followed by a new 
 
 Please ensure that the `TRUEKNOWLEDGE` environment variable has been properly defined and assigned a numeric value before using this command. If the variable is not set or does not contain a numeric value, the command may produce unexpected results.
 
+##### Q10)You can use the `$((...))` syntax for performing arithmetic operations in shell scripting. Here's the correct command to print the result of dividing the value of `POWER` by the value of `DIVIDE`, followed by a new line:
+
+```bash
+echo $((POWER / DIVIDE))
+```
+
+The `$((...))` syntax is used for arithmetic expansion in shell scripting. Within the double parentheses, you can perform mathematical calculations, including addition, subtraction, multiplication, and division. In this case, the expression `POWER / DIVIDE` will be evaluated, and the result will be printed using the `echo` command.
+
+Please ensure that the variables `POWER` and `DIVIDE` have been properly defined and contain valid numeric values before using this command. If any of the variables are not set or do not contain numeric values, the arithmetic operation may produce unexpected results or errors.
+
+
