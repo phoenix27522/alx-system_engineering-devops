@@ -100,4 +100,15 @@ export BEST="School"
 
 The `export` command is used to create a global variable that is accessible to child processes and other shell sessions. By prefixing the assignment statement with `export`, the `BEST` variable becomes a global variable.
 
+#### Q9)To print the result of adding 128 to the value stored in the environment variable `TRUEKNOWLEDGE`, you can use the following command in a shell script or interactive shell session:
+
+```bash
+echo $((128 + $TRUEKNOWLEDGE))
+```
+
+This command uses the arithmetic expansion feature `$((...))` to perform the addition. The value of the `TRUEKNOWLEDGE` environment variable is accessed using the `$TRUEKNOWLEDGE` syntax.
+
+Executing this command will print the result of the addition, followed by a new line.
+
+Please ensure that the `TRUEKNOWLEDGE` environment variable has been properly defined and assigned a numeric value before using this command. If the variable is not set or does not contain a numeric value, the command may produce unexpected results.
 
