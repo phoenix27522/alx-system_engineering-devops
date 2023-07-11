@@ -85,4 +85,9 @@ set
 
 Executing the `set` command will output a comprehensive list of all local variables, environment variables, and functions defined in the current shell session.
 
+## Q7)To create a new local variable named `BEST` with the value `School` in a shell script or interactive shell session, you can use the following command:
 
+```bash
+BEST="School"
+```
+This command assigns the value "School" to the BEST variable.
