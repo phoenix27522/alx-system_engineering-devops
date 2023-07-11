@@ -77,4 +77,12 @@ env | grep PATH
 
 The above command will show the value of the `PATH` variable.
 
+# Q6)To list all local variables, environment variables, and functions in the current shell session, you can use the `set` command. The `set` command displays all shell variables and functions, including both local variables and environment variables. Here's how you can use it:
+
+```bash
+set
+```
+
+Executing the `set` command will output a comprehensive list of all local variables, environment variables, and functions defined in the current shell session.
+
 
