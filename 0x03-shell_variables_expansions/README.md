@@ -133,4 +133,12 @@ The `$((...))` syntax is used for arithmetic expansion in shell scripting. Withi
 
 Please ensure that the variables `BREATH` and `LOVE` have been properly defined and contain valid numeric values before using this command. If any of the variables are not set or do not contain numeric values, the arithmetic operation may produce unexpected results or errors.
 
+## Q12)You can use the `echo` command with the arithmetic expansion syntax to convert a binary number stored in the environment variable `BINARY` to base 10. Here's the modified command:
 
+```bash
+echo "$((2#$BINARY))"
+```
+
+In this command, the `2#` prefix before the `$BINARY` variable tells the shell to interpret the value of `$BINARY` as a number in base 2 (binary). The arithmetic expansion `"$((...))"` then performs the conversion from base 2 to base 10.
+
+Make sure to replace `"$BINARY"` with the appropriate variable or value that holds the binary number you want to convert. When you run this command, it will output the decimal (base 10) equivalent of the binary number.
