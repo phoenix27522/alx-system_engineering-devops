@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displayes all the process with bash word on it
+
+ps -aux | grep bash
