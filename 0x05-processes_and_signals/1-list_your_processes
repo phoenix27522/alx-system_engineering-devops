@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # displayes all te process
 
-top
+ps -auxf
