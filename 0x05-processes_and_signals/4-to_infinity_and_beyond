@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# dispaly a phrase indefinetely
+# sleeps 2
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
