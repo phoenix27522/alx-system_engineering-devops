@@ -33,7 +33,7 @@ int main(void)
 		if (pid > 0)
 		{
 			printf("Zombie process created, PID: %d\n", pid);
-			sleep (1);
+			sleep(1);
 			n++;
 		}
 		else
