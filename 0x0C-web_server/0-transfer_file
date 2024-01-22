@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Check if all 4 parameters are provided
+if [ "$#" -lt 4 ]; then
+    echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+    exit 1
+fi
+
+# Assign parameters to variables
+file_path="$1"
+server_ip="$2"
+username="$3"
+ssh_key="$4"
+
+# Display information about the transfer
+echo "Transferring file to server..."
+echo "File path: $file_path"
+echo "Server IP: $server_ip"
+echo "Username: $username"
+echo "SSH key path: $ssh_key"
+
+# Disable strict host key checking for scp
+scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$username@$server_ip":~/ 
+
+# Check the exit status of the scp command
+if [ $? -eq 0 ]; then
+    echo "File transfer completed successfully."
+else
+    echo "Error: File transfer failed."
+fi
