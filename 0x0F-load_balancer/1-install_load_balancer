@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Update the package list
 sudo apt update
@@ -45,4 +45,3 @@ sudo systemctl enable haproxy
 
 # Restart HAProxy to apply the changes
 sudo systemctl restart haproxy
-
